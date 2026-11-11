@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gabriel Kyle Agoncillo | Outbound Sales</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7f9;--surface:#fff;--ink:#101828;--mute:#5a6375;--line:#dde1e8;--accent:#2347f5;--accent-ink:#fff;--bar:#c9d2fb;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1320;--surface:#151c2e;--ink:#eef1f7;--mute:#9aa4b8;--line:#27304a;--accent:#7f96ff;--accent-ink:#0e1320;--bar:#2a3768;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e1320;--surface:#151c2e;--ink:#eef1f7;--mute:#9aa4b8;--line:#27304a;--accent:#7f96ff;--accent-ink:#0e1320;--bar:#2a3768;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",sans-serif;line-height:1.1;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+header.hero{padding:88px 0 56px}
+.hero h1{font-size:clamp(44px,9vw,92px);font-weight:800;letter-spacing:-.03em;max-width:12ch}
+.hero .role{font:500 clamp(18px,2.4vw,22px)/1.4 "Bricolage Grotesque",sans-serif;color:var(--accent);margin:20px 0 0}
+.hero p.sum{max-width:62ch;margin:24px 0 0;color:var(--mute)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.btn{display:inline-block;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:500;border:1.5px solid var(--ink)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn:hover{opacity:.88}
+section{padding:56px 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(28px,4vw,40px);font-weight:700;letter-spacing:-.02em;margin-bottom:12px}
+.lede{color:var(--mute);max-width:60ch;margin:0 0 32px}
+.tl-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+.tl{min-width:720px;padding:20px 20px 8px}
+.axis{position:relative;height:24px;margin-left:200px;border-bottom:1px solid var(--line)}
+.axis span{position:absolute;top:0;font-size:13px;color:var(--mute);transform:translateX(-50%)}
+.row{display:flex;align-items:center;height:38px}
+.row .nm{width:200px;flex:none;font-size:14px;padding-right:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row .track{position:relative;flex:1;height:100%;border-left:1px solid var(--line)}
+.row .bar{position:absolute;top:9px;height:20px;border-radius:4px;background:var(--bar);transform-origin:left;animation:grow .9s cubic-bezier(.2,.7,.2,1) both}
+.row.sales .bar{background:var(--accent)}
+.legend{display:flex;gap:20px;flex-wrap:wrap;font-size:14px;color:var(--mute);margin-top:14px}
+.legend i{display:inline-block;width:14px;height:14px;border-radius:3px;margin-right:8px;vertical-align:-2px}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media (prefers-reduced-motion:reduce){.row .bar{animation:none}}
+.job{display:grid;grid-template-columns:200px 1fr;gap:8px 32px;padding:28px 0;border-top:1px solid var(--line)}
+.job:first-of-type{border-top:0;padding-top:0}
+.job .when{color:var(--mute);font-size:15px}
+.job h3{font-size:22px;font-weight:700}
+.job .co{color:var(--accent);font-weight:500;margin:4px 0 10px}
+.job ul{margin:0;padding-left:20px;max-width:64ch}
+.job li{margin:4px 0}
+@media (max-width:640px){.job{grid-template-columns:1fr}}
+.skills{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
+.skills li{padding:8px 14px;border:1px solid var(--line);background:var(--surface);border-radius:999px;font-size:15px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+@media (max-width:640px){.two{grid-template-columns:1fr}}
+.two h3{font-size:20px;margin-bottom:6px}
+.two p{margin:0;color:var(--mute)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-top:24px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:22px}
+.card h3{font-size:20px;font-weight:700}
+.card .kind{color:var(--accent);font-weight:500;font-size:14px;margin:4px 0 10px}
+.card p{margin:0 0 10px;color:var(--mute);font-size:15px}
+.card ul{margin:0 0 14px;padding-left:18px;font-size:15px}
+.card ul.tags{padding:0}
+.tags{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:0}
+.tags li{font-size:12.5px;padding:3px 10px;border:1px solid var(--line);border-radius:999px;color:var(--mute);margin:0}
+.badge{display:inline-block;font-size:12px;font-weight:500;letter-spacing:.06em;color:var(--accent-ink);background:var(--accent);padding:3px 10px;border-radius:999px;margin-bottom:12px}
+.award .src{font-weight:500;margin:8px 0 2px}
+.award .date{color:var(--mute);font-size:14px;margin-bottom:8px}
+.meters{display:grid;grid-template-columns:1fr 1fr;gap:16px 48px;margin-top:24px}
+@media (max-width:640px){.meters{grid-template-columns:1fr}}
+.meters h3{font-size:20px;margin-bottom:16px}
+.meter .top{display:flex;justify-content:space-between;font-size:15px}
+.meter .rail{height:8px;border-radius:99px;background:var(--line);margin:6px 0 16px;overflow:hidden}
+.meter .fill{height:100%;background:var(--accent);border-radius:99px}
+footer{padding:56px 0 72px;border-top:1px solid var(--line)}
+footer h2{font-size:clamp(32px,5vw,52px);font-weight:800;letter-spacing:-.025em;max-width:16ch}
+footer small{display:block;margin-top:40px;color:var(--mute)}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+  <h1>Gabriel Kyle Agoncillo</h1>
+  <p class="role">Sales Development Representative · Business Development · Outbound Sales</p>
+  <p class="sum">I’ve spent 8+ years in outbound sales across telecom, SaaS, healthcare and BPO: prospecting, qualifying leads, managing CRM pipelines, leading sales teams and hitting quota. I’ve supported major U.S. telecom accounts (AT&amp;T, Verizon, T-Mobile, RingCentral), booked meetings for Simpli.fi, and most recently led a sales team as Sales Manager at Bookimed.</p>
+  <div class="cta">
+    <a class="btn primary" href="mailto:kyleagoncillo237@gmail.com">Email me</a>
+    <a class="btn" href="https://www.linkedin.com/in/817752197/" rel="noopener">LinkedIn</a>
+  </div>
+</div></header>
+
+<main>
+<section><div class="wrap">
+  <h2>Nine years, one job: starting conversations</h2>
+  <p class="lede">Every role since 2017, drawn to scale. The overlaps in 2025 are the part-time freelance accounts I ran alongside my telecom contract work.</p>
+  <div class="tl-scroll"><div class="tl" id="tl" role="img" aria-label="Timeline of eight roles from July 2017 to October 2026"></div></div>
+  <div class="legend"><span><i style="background:var(--accent)"></i>Sales and SDR roles</span><span><i style="background:var(--bar)"></i>Leadership, marketing and support roles</span></div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Experience</h2>
+  <p class="lede">Newest first.</p>
+
+  <div class="job"><div class="when">Mar 2026 – Oct 2026<br>Remote, full-time</div><div><h3>Sales Manager</h3><div class="co">Bookimed</div><ul><li>Led revenue-driven sales strategies and built relationships with healthcare providers and partners.</li><li>Oversaw a high-performing sales team, developed tailored solutions and managed team performance.</li></ul></div></div>
+
+  <div class="job"><div class="when">Oct 2025 – Mar 2026<br>Part-time freelance</div><div><h3>Virtual Assistant, SaaS Advertising</h3><div class="co">Simpli.fi</div><ul><li>Prospected and qualified leads for a programmatic advertising platform, booking meetings for the sales team.</li><li>Maintained CRM records and worked with sales and marketing to drive platform adoption.</li></ul></div></div>
+
+  <div class="job"><div class="when">Jul 2025 – Sep 2025<br>Part-time freelance</div><div><h3>Virtual Assistant, Property Management Insurance</h3><div class="co">BEAGLE</div><ul><li>Ran outbound outreach to U.S. property managers for renters insurance compliance and enrollment.</li></ul></div></div>
+
+  <div class="job"><div class="when">Feb 2025 – Jan 2026<br>Independent contractor</div><div><h3>Mobility Sales Executive</h3><div class="co">AT&amp;T, Verizon, T-Mobile, RingCentral</div><ul><li>Managed outbound sales outreach and account support for major U.S. telecom providers.</li><li>Prospected new business and re-engaged existing accounts to expand service adoption.</li></ul></div></div>
+
+  <div class="job"><div class="when">Jun 2024 – Feb 2025</div><div><h3>Sales Development Representative</h3><div class="co">TELUS Digital</div><ul><li>Prospected and qualified inbound and outbound leads, consistently meeting or exceeding quotas.</li><li>Managed the CRM pipeline, tracking each lead from first touch through handoff to Account Executives.</li></ul></div></div>
+
+  <div class="job"><div class="when">Mar 2022 – Jun 2024</div><div><h3>Team Leader</h3><div class="co">Alorica</div><ul><li>Supervised and coached a high-performing sales team with consistent top-performer status.</li><li>Monitored performance metrics and led weekly strategy meetings to drive productivity.</li></ul></div></div>
+
+  <div class="job"><div class="when">Feb 2019 – Feb 2022</div><div><h3>Marketing Manager</h3><div class="co">Empowered Consumerism</div><ul><li>Developed and executed marketing and outreach strategies aligned with sales goals.</li><li>Identified and targeted high-potential accounts, contributing to increased sales revenue.</li></ul></div></div>
+
+  <div class="job"><div class="when">Jul 2017 – Jan 2019</div><div><h3>Customer Sales Representative</h3><div class="co">Inspiro</div><ul><li>Handled customer inquiries and sales conversations, consistently meeting targets.</li></ul></div></div>
+</div></section>
+<section id="projects"><div class="wrap">
+  <h2>Featured projects</h2>
+  <p class="lede" style="margin-bottom:0">Sample work demonstrating expertise in B2B sales, lead generation and digital marketing.</p>
+  <div class="grid">
+    <article class="card"><h3>B2B Lead Generation Campaign</h3><div class="kind">Sales Development Project</div><p>Built a lead generation strategy for a SaaS company targeting mid-market businesses.</p><ul><li>Identified 150+ qualified prospects using LinkedIn Sales Navigator</li><li>Created personalized outreach email sequences</li><li>Built a CRM workflow in HubSpot for lead tracking</li></ul><ul class="tags"><li>Lead Gen</li><li>CRM</li><li>Email Marketing</li></ul></article>
+    <article class="card"><h3>Programmatic Ad Campaign</h3><div class="kind">Digital Advertising Project</div><p>Designed and proposed a programmatic advertising strategy for an e-commerce client.</p><ul><li>Developed audience targeting across display networks</li><li>Created a campaign budget allocation plan ($50K/month)</li><li>Built a performance tracking dashboard</li></ul><ul class="tags"><li>Programmatic</li><li>Analytics</li><li>Strategy</li></ul></article>
+    <article class="card"><h3>Telecom Account Optimization</h3><div class="kind">Account Management Project</div><p>Managed portfolio optimization for business telecom accounts across major carriers.</p><ul><li>Analyzed billing patterns for 50+ business accounts</li><li>Identified cost-saving opportunities averaging 23% reduction</li><li>Created an upsell strategy for premium service tiers</li></ul><ul class="tags"><li>Telecom</li><li>Account Mgmt</li><li>Sales</li></ul></article>
+    <article class="card"><h3>B2B Email Marketing Sequence</h3><div class="kind">Email Marketing Project</div><p>Developed a 7-touch email campaign for a B2B software company.</p><ul><li>Wrote subject lines that reached a 42% open rate</li><li>Created value-driven content for each touchpoint</li><li>Built an automation workflow in Mailchimp</li></ul><ul class="tags"><li>Email Marketing</li><li>Copywriting</li><li>Automation</li></ul></article>
+    <article class="card"><h3>Sales Performance Dashboard</h3><div class="kind">Analytics Project</div><p>Built a sales tracking dashboard for team performance monitoring.</p><ul><li>Designed a KPI tracking system in Google Sheets</li><li>Created automated reporting for weekly metrics</li><li>Built visualization charts for trend analysis</li></ul><ul class="tags"><li>Analytics</li><li>Dashboard</li><li>Reporting</li></ul></article>
+    <article class="card"><h3>B2B Social Media Strategy</h3><div class="kind">Social Media Project</div><p>Developed a LinkedIn content strategy for a professional services firm.</p><ul><li>Created a 30-day content calendar</li><li>Wrote thought leadership articles for LinkedIn</li><li>Designed carousel posts using Canva</li></ul><ul class="tags"><li>Social Media</li><li>Content Strategy</li><li>Canva</li></ul></article>
+  </div>
+</div></section>
+<section id="certificates"><div class="wrap">
+  <h2>Certifications &amp; awards</h2>
+  <p class="lede" style="margin-bottom:0">Professional recognitions and certifications.</p>
+  <div class="grid">
+    <article class="card award"><span class="badge">TOP AWARD</span><h3>Sales Agent of the Year</h3><div class="src">Telus International</div><div class="date">December 23, 2024</div><p>Highest recognition for outstanding sales performance and consistent excellence throughout the year at Telus SBS Araneta Site.</p></article>
+    <article class="card award"><span class="badge">ROOKIE EXCELLENCE</span><h3>Top 5 Rookie Sales Executive</h3><div class="src">Telus International</div><div class="date">November 23, 2024</div><p>Recognized among the top 5 rookie performers for exceptional early contributions and rapid skill development.</p></article>
+    <article class="card award"><span class="badge">QUARTERLY</span><h3>SMB Sales Q3 Top Performer</h3><div class="src">Telus International</div><div class="date">August 29, 2024</div><p>Achieved top performance metrics in the Small Medium Business sales division for Q3 2024.</p></article>
+    <article class="card award"><span class="badge">GROWTH</span><h3>Top 5 Most Improved Sales Executive</h3><div class="src">Telus International</div><div class="date">August 23, 2024</div><p>Recognized for significant performance improvement and dedication to professional growth.</p></article>
+    <article class="card award"><span class="badge">PROFESSIONAL</span><h3>Lean Six Sigma Yellow Belt Certified</h3><div class="src">Management and Strategy Institute</div><div class="date">January 23, 2026 | Certification #350279506</div><p>Internationally recognized certification in process improvement and quality management methodologies.</p></article>
+    <article class="card award"><span class="badge">HUBSPOT</span><h3>Digital Marketing Certified</h3><div class="src">HubSpot Academy</div><div class="date">Valid: January 22, 2026 – February 21, 2027</div><p>Certified in digital marketing practices including SEO, content strategy, social media and marketing analytics.</p></article>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Core competencies</h2>
+  <div class="meters">
+    <div><h3>Technical skills</h3>
+      <div class="meter"><div class="top"><span>B2B Sales</span><span>95%</span></div><div class="rail"><div class="fill" style="width:95%"></div></div></div>
+      <div class="meter"><div class="top"><span>Lead Generation</span><span>95%</span></div><div class="rail"><div class="fill" style="width:95%"></div></div></div>
+      <div class="meter"><div class="top"><span>CRM Management</span><span>90%</span></div><div class="rail"><div class="fill" style="width:90%"></div></div></div>
+      <div class="meter"><div class="top"><span>Digital Marketing</span><span>85%</span></div><div class="rail"><div class="fill" style="width:85%"></div></div></div>
+    </div>
+    <div><h3>Professional skills</h3>
+      <div class="meter"><div class="top"><span>Team Leadership</span><span>95%</span></div><div class="rail"><div class="fill" style="width:95%"></div></div></div>
+      <div class="meter"><div class="top"><span>Client Relations</span><span>95%</span></div><div class="rail"><div class="fill" style="width:95%"></div></div></div>
+      <div class="meter"><div class="top"><span>Strategic Planning</span><span>90%</span></div><div class="rail"><div class="fill" style="width:90%"></div></div></div>
+      <div class="meter"><div class="top"><span>Process Improvement</span><span>80%</span></div><div class="rail"><div class="fill" style="width:80%"></div></div></div>
+    </div>
+  </div>
+</div></section>
+<section><div class="wrap">
+  <h2>Skills</h2>
+  <ul class="skills" style="margin-top:20px">
+    <li>Outbound prospecting</li><li>Lead qualification</li><li>CRM management</li><li>Cold calling and email outreach</li><li>SaaS sales</li><li>Quota attainment</li><li>Consultative selling</li><li>Objection handling</li><li>Sales team leadership</li><li>Performance management</li>
+  </ul>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Education and certifications</h2>
+  <div class="two" style="margin-top:24px">
+    <div><h3>BS in Information Technology</h3><p>ICCT Colleges, 2014 – 2018</p></div>
+    
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <h2>Hiring for outbound sales? Let’s talk.</h2>
+  <div class="cta">
+    <a class="btn primary" href="mailto:kyleagoncillo237@gmail.com">kyleagoncillo237@gmail.com</a>
+    <a class="btn" href="https://www.linkedin.com/in/817752197/" rel="noopener">LinkedIn profile</a>
+  </div>
+  <small>Based in Antipolo City, Philippines. Working remotely with U.S. teams.</small>
+</div></footer>
+
+<script>
+(function(){
+  var roles=[
+    ["Customer Sales Rep, Inspiro","2017-07","2019-01",1],
+    ["Marketing Manager, Empowered","2019-02","2022-02",0],
+    ["Team Leader, Alorica","2022-03","2024-06",0],
+    ["SDR, TELUS Digital","2024-06","2025-02",1],
+    ["Mobility Sales Exec, Telecom","2025-02","2026-01",1],
+    ["Virtual Assistant, BEAGLE","2025-07","2025-09",0],
+    ["Virtual Assistant, Simpli.fi","2025-10","2026-03",1],
+    ["Sales Manager, Bookimed","2026-03","2026-10",1]
+  ];
+  function m(s){var p=s.split("-");return (+p[0])*12+(+p[1])-1}
+  var start=m("2017-07"),end=m("2026-10")+1,span=end-start;
+  var tl=document.getElementById("tl");
+  var axis='<div class="axis" aria-hidden="true">';
+  for(var y=2018;y<=2026;y++){axis+='<span style="left:'+((y*12-start)/span*100)+'%">'+y+'</span>'}
+  axis+='</div>';
+  var rows="";
+  roles.forEach(function(r,i){
+    var a=(m(r[1])-start)/span*100,w=(m(r[2])+1-m(r[1])-1+1)/span*100;
+    rows+='<div class="row'+(r[3]?' sales':'')+'" aria-hidden="true"><div class="nm">'+r[0]+'</div><div class="track"><div class="bar" style="left:'+a+'%;width:'+w+'%;animation-delay:'+(i*70)+'ms"></div></div></div>';
+  });
+  tl.innerHTML=axis+rows;
+})();
+</script>
+</body>
+</html>
